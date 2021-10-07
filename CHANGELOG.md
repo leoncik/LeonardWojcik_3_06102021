@@ -7,9 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2021-??-07
+### Added
+- styling fonctionnement section.
+
 ## [0.1.1] - 2021-10-07
 ### Added
 - styling hero section.
+- icons folder
+- -hero.scss
+- _base.scss
+- _buttons.scss
 
 ## [0.1.0] - 2021-10-06
 ### Added

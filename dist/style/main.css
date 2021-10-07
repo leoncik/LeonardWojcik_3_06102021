@@ -1,6 +1,9 @@
 body {
+  margin: 0;
+}
+
+body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
 }
 
 a {
@@ -14,6 +17,33 @@ header {
 
 h1 {
   font-family: "Shrikhand", cursive;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero__location {
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.cta {
+  background-color: #f6f6f6;
+  margin-top: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn {
+  border-radius: 25px;
+  height: 40px;
+  padding: 0 15px;
+  background: linear-gradient(#ef74da, #a85ddc);
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
