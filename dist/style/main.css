@@ -124,6 +124,17 @@ h1 {
   background-color: green;
 }
 
+/* Footer section */
+footer {
+  padding: 25px 0;
+  background-color: #353535;
+  color: white;
+}
+
+footer ul {
+  margin-bottom: 0;
+}
+
 .btn {
   border-radius: 25px;
   height: 40px;
@@ -135,5 +146,15 @@ h1 {
 .fonctionnement__item img {
   width: 15px;
 }
+
+.handshake {
+  width: 15px;
+}
+
+.logo path {
+  fill: white;
+}
+
+/* TO DO : auto change logo color when the background is dark or light */
 
 /*# sourceMappingURL=main.css.map */
