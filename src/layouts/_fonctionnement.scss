@@ -1,0 +1,32 @@
+/* Fonctionnement section */
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.fonctionnement__item {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 25px;
+    padding-left: 15px;
+    background-color: #f6f6f6;
+    box-shadow: 3px 3px 5px rgb(148, 148, 148), -3px 3px 5px rgb(148, 148, 148);
+    height: 45px;
+    border-radius: 15px;
+}
+
+.fonctionnement__item::before {
+    content: "1";
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -15px;
+    color: white;
+    background-color: darkorchid;
+    border-radius: 50%;
+}

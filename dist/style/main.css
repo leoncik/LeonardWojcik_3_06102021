@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -11,6 +15,7 @@ a {
   color: black;
 }
 
+/* Header section */
 header {
   text-align: center;
 }
@@ -19,6 +24,7 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
+/* Hero section */
 .hero {
   text-align: center;
 }
@@ -38,12 +44,48 @@ h1 {
   padding-bottom: 50px;
 }
 
+/* Fonctionnement section */
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.fonctionnement__item {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 25px;
+  padding-left: 15px;
+  background-color: #f6f6f6;
+  box-shadow: 3px 3px 5px #949494, -3px 3px 5px #949494;
+  height: 45px;
+  border-radius: 15px;
+}
+
+.fonctionnement__item::before {
+  content: "1";
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -15px;
+  color: white;
+  background-color: darkorchid;
+  border-radius: 50%;
+}
+
 .btn {
   border-radius: 25px;
   height: 40px;
   padding: 0 15px;
   background: linear-gradient(#ef74da, #a85ddc);
   color: white;
+}
+
+.fonctionnement__item img {
+  width: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
