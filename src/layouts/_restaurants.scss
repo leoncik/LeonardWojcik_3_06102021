@@ -1,0 +1,48 @@
+/* Restaurants section */
+
+.restaurants {
+    background-color: #f6f6f6;
+    padding: 50px 15px;
+}
+
+.restaurants__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.restaurants__item {
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.restaurants__item figure {
+    margin: 0;
+}
+
+.restaurant__img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.restaurants__item figcaption {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Nouveauté restaurant */
+
+.restaurants__item_new::before {
+    content: "Nouveau";
+    text-align: center;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    background-color: green;
+}
