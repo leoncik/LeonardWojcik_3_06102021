@@ -1,3 +1,7 @@
+// utils
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
 // base
 @import "./base/base.scss";
 @import "./base/typography.scss";
@@ -12,4 +16,3 @@
 // components
 @import "./components/buttons.scss";
 @import "./components/icons.scss";
-@import "./components/logo.scss";

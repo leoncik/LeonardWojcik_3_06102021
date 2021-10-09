@@ -73,7 +73,7 @@ h1 {
   position: absolute;
   left: -15px;
   color: white;
-  background-color: darkorchid;
+  background-color: #9356DC;
   border-radius: 50%;
 }
 
@@ -126,9 +126,13 @@ h1 {
 
 /* Footer section */
 footer {
-  padding: 25px 0;
   background-color: #353535;
   color: white;
+  background-color: #353535;
+  padding: 25px 0;
+}
+footer .logo path {
+  fill: white;
 }
 
 footer ul {
@@ -139,7 +143,7 @@ footer ul {
   border-radius: 25px;
   height: 40px;
   padding: 0 15px;
-  background: linear-gradient(#ef74da, #a85ddc);
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
 }
 
@@ -150,11 +154,5 @@ footer ul {
 .handshake {
   width: 15px;
 }
-
-.logo path {
-  fill: white;
-}
-
-/* TO DO : auto change logo color when the background is dark or light */
 
 /*# sourceMappingURL=main.css.map */

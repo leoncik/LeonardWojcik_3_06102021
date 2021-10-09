@@ -1,0 +1,27 @@
+// Change la couleur du texte en fonction de la couleur de fond
+@mixin background-text-color($background-color) {
+    background-color: $background-color;
+    @if (lightness($background-color) < 50%) {
+        color: white;
+    }
+    
+    @else{
+        color: black;
+        }
+    }
+
+// Change la couleur du logo en fonction de la couleur de fond
+@mixin background-logo-color($background-color) {
+    background-color: $background-color;
+    @if (lightness($background-color) < 50%) {
+        .logo path {
+            fill: white;
+        }
+    }
+    
+    @else{
+        .logo path {
+            fill: black;
+        }
+    }
+  }

@@ -13,7 +13,7 @@
     align-items: center;
     margin-top: 25px;
     padding-left: 15px;
-    background-color: #f6f6f6;
+    background-color: $section-background-color-light;
     box-shadow: 3px 3px 5px rgb(148, 148, 148), -3px 3px 5px rgb(148, 148, 148);
     height: 45px;
     border-radius: 15px;
@@ -27,6 +27,6 @@
     position: absolute;
     left: -15px;
     color: white;
-    background-color: darkorchid;
+    background-color: $primary-color;
     border-radius: 50%;
 }

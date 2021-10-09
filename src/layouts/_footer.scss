@@ -1,9 +1,9 @@
 /* Footer section */
 
 footer {
+    @include background-text-color($gris-fonce);
+    @include background-logo-color($gris-fonce);
     padding: 25px 0;
-    background-color: #353535;
-    color: white;
 }
 
 footer ul {

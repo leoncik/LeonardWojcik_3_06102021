@@ -11,6 +11,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - refactoring code
 
+### Added
+- Variables (colors)
+- Mixins (text and background color)
+
+### Fixed
+- W3C validator errors.
+
+### Removed
+- _logo.scss (replaced by the mixin "background-logo-color")
+
 ## [0.1.4] - 2021-10-08
 ### Added
 - styling footer section.
