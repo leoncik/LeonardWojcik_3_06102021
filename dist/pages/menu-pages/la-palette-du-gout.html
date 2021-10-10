@@ -4,98 +4,81 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="dist/style/main.css">
+        <link rel="stylesheet" href="../../style/main.css">
         <!-- Font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
-        <title>Ohmyfood! | Composez votre menu dans des restaurants d'exception !</title>
+        <title>La palette du goût</title>
     </head>
     <body>
         <header>
             <h1><a href="#">ohmyfood</a></h1>
         </header>
 
-        <section class="hero">
-            <div class="hero__location">
-                <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Paris, Belleville</p>
-            </div>
-            <div class="cta">
-                <h2 class="cta__title">Réservez le menu qui vous convient</h2>
-                <h3 class="cta__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</h3>
-                <button type="button" class="cta__button btn">Explorer nos restaurants</button>
-            </div>
-        </section>
+        <div class="banner"></div>
 
-        <section class="fonctionnement">
-            <h2>Fonctionnement</h2>
-            <ol>
-                <li class="fonctionnement__item"><img src="dist/images/icons/smartphone.svg" alt="Alt text"> Choisissez un restaurant</li>
-                <li class="fonctionnement__item"><img src="dist/images/icons/list.svg" alt="Alt text"> Composez votre menu</li>
-                <li class="fonctionnement__item"><img src="dist/images/icons/covered-food-tray-on-a-hand-of-hotel-room-service-svgrepo-com.svg" alt="Alt text" > Dégustez au restaurant</li>
-            </ol>
-        </section>
-
-        <main class="restaurants">
-            <h2 class="restaurants__title">Restaurants</h2>
-            <div class="restaurants__list">
-                <a href="dist/pages/menu-pages/la-palette-du-gout.html" class="restaurants__item restaurants__item_new">
-                    <figure>
-                        <img src="dist/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Alt text" class="restaurant__img">
-                        <figcaption>
-                            <div class="restaurants__label">
-                                <h3 class="restautant__name">La palette du goût</h3>
-                                <p class="restaurants__location">Ménilmontant</p>
-                            </div>
-                            <div class="restaurants__favourite">
-                                <p>❤</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="dist/pages/menu-pages/la-note-enchantee.html" class="restaurants__item restaurants__item_new">
-                    <figure>
-                        <img src="dist/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Alt text" class="restaurant__img">
-                        <figcaption>
-                            <div class="restaurants__label">
-                                <h3 class="restautant__name">La note enchantée</h3>
-                                <p class="restaurants__location">Charonne</p>
-                            </div>
-                            <div class="restaurants__favourite">
-                                <p>❤</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="dist/pages/menu-pages/a-la-francaise.html" class="restaurants__item">
-                    <figure>
-                        <img src="dist/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Alt text" class="restaurant__img">
-                        <figcaption>
-                            <div class="restaurants__label">
-                                <h3 class="restautant__name">À la française</h3>
-                                <p class="restaurants__location">Cité Rouge</p>
-                            </div>
-                            <div class="restaurants__favourite">
-                                <p>❤</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="dist/pages/menu-pages/le-delice-des-sens.html" class="restaurants__item">
-                    <figure>
-                        <img src="dist/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Alt text" class="restaurant__img">
-                        <figcaption>
-                            <div class="restaurants__label">
-                                <h3 class="restautant__name">Le délice des sens</h3>
-                                <p class="restaurants__location">Folie-Méricourt</p>
-                            </div>
-                            <div class="restaurants__favourite">
-                                <p>❤</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
+        <main class="menu">
+            <div class="menu__head">
+                <h1>La palette du goût</h1>
+                <span>❤</span>
             </div>
+
+            <section class="entrees">
+                <div class="entrees__item">
+                    <h2 class="entrees__name">Fricassée d'escargot</h2>
+                    <p class="entrees__description">Au piment d'Espelette </p>
+                    <p class="entrees__prince">25€</p>
+                </div>
+                <div class="entrees__item">
+                    <h2 class="entrees__name">Foie gras de canard mi-cuit</h2>
+                    <p class="entrees__description">Et ses copeaux de truffe noire</p>
+                    <p class="entrees__prince">35€</p>
+                </div>
+                <div class="entrees__item">
+                    <h2 class="entrees__name">Oeuf au plat</h2>
+                    <p class="entrees__description">Assaisonné à la truffe sur lit de caviar</p>
+                    <p class="entrees__prince">20€</p>
+                </div>
+            </section>
+
+            <section class="plats">
+                <div class="plats__item">
+                    <h2 class="plats__name">Filet de boeuf aux herbes</h2>
+                    <p class="plats__description">Accompagné de sa ribambelle de légumes</p>
+                    <p class="plats__price">40€</p>
+                </div>
+                <div class="plats__item">
+                    <h2 class="plats__name">Parmentier de queue de boeuf</h2>
+                    <p class="plats__description">À la truffe noire sur sa purée de panais</p>
+                    <p class="plats__price">35€</p>
+                </div>
+                <div class="plats__item">
+                    <h2 class="plats__name">Filet de turbot</h2>
+                    <p class="plats__description">Aux agrumes</p>
+                    <p class="plats__price">44€</p>
+                </div>
+            </section>
+
+            <section class=desserts>
+                <div class="desserts__item">
+                    <h2 class="dessert__name">Paris-Brest</h2>
+                    <p class="dessert__description">Revisité</p>
+                    <p class="dessert__price">18€</p>
+                </div>
+                <div class="desserts__item">
+                    <h2 class="dessert__name">Macaron au chocolat d'exception </h2>
+                    <p class="dessert__description">Et glace à la vanille de Madagascar</p>
+                    <p class="dessert__price">22€</p>
+                </div>
+                <div class="desserts__item">
+                    <h2 class="dessert__name">Mousse au chocolat </h2>
+                    <p class="dessert__description">Au piment d'Espelette et à la truffe noire</p>
+                    <p class="dessert__price">23€</p>
+                </div>
+            </section>
+
+            <button>Commander</button>
         </main>
 
         <footer>
@@ -126,7 +109,6 @@
                 <li>Mentions légales</li>
                 <li>Contact</li>
             </ul>
-        </footer>
-        
+        </footer>        
     </body>
 </html>
