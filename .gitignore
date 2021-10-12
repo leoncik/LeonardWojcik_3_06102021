@@ -1,12 +1,13 @@
 # Node dependencies
-
 node_modules/
 
 # SASS files
-
 .sass-cache*
 *.map
 
 # System files
-
 .directory
+
+# HTML menu template
+menu-template.html
+src/html/menu-template.html

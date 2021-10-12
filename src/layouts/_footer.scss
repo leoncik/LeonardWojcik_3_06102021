@@ -1,8 +1,8 @@
 /* Footer section */
 
 footer {
-    @include background-text-color($gris-fonce);
-    @include background-logo-color($gris-fonce);
+    @include background-text-color($section-background-color-dark);
+    @include background-logo-color($section-background-color-dark);
     padding: 25px 0;
 }
 
