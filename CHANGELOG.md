@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
-## [0.2.4] - 2021-10-??
+## [0.2.5] - 2021-10-??
 ### Added
-- Menu pages animation.
+- Animations on every menu mages.
+
+
+## [0.2.4] - 2021-10-13
+### Added
+- Menu pages animation (menu "À la française" only).
 
 
 ## [0.2.3] - 2021-10-13

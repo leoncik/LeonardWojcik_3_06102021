@@ -1,0 +1,53 @@
+// TO DO : Improve effect in reverse motion.
+
+/* Initial state */
+
+.menu__item {
+    overflow: hidden; // Permet à l'élément "check" de prendre la forme arrondie automatiquement
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__text {
+    flex: 1;
+    min-width: 0;
+}
+
+.menu__text h2, .menu__text p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.menu__selection {
+    display: flex;
+}
+
+.menu__check {
+    width: 0;
+    height: 100%;
+    background-color: $tertiary-color;
+    transition: 0.4s;
+}
+
+.menu__check::before {
+    content: "\f058";
+    font-size: 2.5rem;
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    color: white;
+    font-family: "FontAwesome";
+    transition: transform .4s ease-in-out;
+}
+
+/* Animation state */ 
+
+.menu__item:hover .menu__check {
+    width: 100px;
+}
+
+.menu__item:hover .menu__check::before {
+    transform: rotate(360deg);
+}
