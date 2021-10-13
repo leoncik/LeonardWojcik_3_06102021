@@ -1,0 +1,6 @@
+.fa-heart-o:hover::before {
+    content: "\f004";
+    background: linear-gradient(red, blue);
+    background-clip: text;
+	color: transparent;
+}

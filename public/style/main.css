@@ -104,11 +104,6 @@ header {
   height: 200px;
 }
 
-.restaurants__item figcaption {
-  display: flex;
-  justify-content: space-around;
-}
-
 /* Nouveauté restaurant */
 .restaurants__item_new::before {
   content: "Nouveau";
@@ -119,6 +114,17 @@ header {
   right: 5px;
   color: white;
   background-color: green;
+}
+
+/* Heart position */
+.restaurants__favourite {
+  position: relative;
+}
+
+.fa-heart-o {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
 }
 
 /* Footer section */
@@ -176,6 +182,13 @@ footer ul {
 .entrees__item, .plats__item, .desserts__item {
   background-color: white;
   border-radius: 15px;
+}
+
+.fa-heart-o:hover::before {
+  content: "\f004";
+  background: linear-gradient(red, blue);
+  background-clip: text;
+  color: transparent;
 }
 
 .menu {

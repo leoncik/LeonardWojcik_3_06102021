@@ -7,10 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
-## [0.2.2] - 2021-10-??
+## [0.2.3] - 2021-10-13
+### Added
+- Turn hearts into checkbox for click animation.
+
+## [0.2.2] - 2021-10-13
 ### Added
 - Improve styling of the cards.
 - Heart shape and hover animation.
+- Comments in HTML.
 
 ## [0.2.1] - 2021-10-12
 ### Added
