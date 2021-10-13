@@ -1,6 +1,26 @@
-.fa-heart-o:hover::before {
+// Cache la checkbox d'origine
+.restaurants__favourite input {
+    display: none;
+}
+
+.heart::before {
+    content: "\f08a";
+    position: absolute;
+    font-size: 2.2rem;
+    font-family: "FontAwesome";
+    transition: 0.2s ease-in-out;
+}
+
+.heart:hover::before {
+    color: $secondary-color;
+}
+
+input:checked + .heart::before
+{
     content: "\f004";
     background: linear-gradient(red, blue);
     background-clip: text;
 	color: transparent;
+    font-family: "FontAwesome";
+    transform: scale(1.3);
 }
