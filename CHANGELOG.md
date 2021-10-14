@@ -5,14 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-
 ## [Unreleased]
-## [0.3.1] - 2021-10-??
+## [0.3.2] - 2021-10-??
 ### Added
 - Loading screen animation
 - Appearing menu item animation
 
-## [0.3.0] - 2021-10-15
+
+
+
+## [Unreleased]
+## [0.3.1] - 2021-10-14
+### Added
+- Improved menu hover animation.
+
+### Fixed
+- Directory redirection issues (back to index and banner images).
+
+## [0.3.0] - 2021-10-14
 ### Added
 - Tablet and desktop versions (work in progress).
 - Set footer elements as anchors.

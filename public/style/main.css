@@ -224,19 +224,19 @@ footer ul {
 }
 
 .banner-note-enchantee {
-  background-image: url("/public/images/restaurants/large/la-note-enchantee.jpg");
+  background-image: url("../../public/images/restaurants/large/la-note-enchantee.jpg");
 }
 
 .banner-a-la-francaise {
-  background-image: url("/public/images/restaurants/large/a-la-francaise.jpg");
+  background-image: url("../../public/images/restaurants/large/a-la-francaise.jpg");
 }
 
 .banner-la-palette-du-gout {
-  background-image: url("/public/images/restaurants/large/palette-du-gout.jpg");
+  background-image: url("../../public/images/restaurants/large/palette-du-gout.jpg");
 }
 
 .banner-le-delice-des-sens {
-  background-image: url("/public/images/restaurants/large/le-delice-des-sens.jpg");
+  background-image: url("../../public/images/restaurants/large/le-delice-des-sens.jpg");
 }
 
 .entrees__item, .plats__item, .desserts__item {
@@ -308,7 +308,6 @@ input:checked + .heart::before {
   top: 30px;
   color: white;
   font-family: "FontAwesome";
-  transition: transform 0.4s ease-in-out;
 }
 
 /* Animation state */
@@ -317,6 +316,7 @@ input:checked + .heart::before {
 }
 
 .menu__item:hover .menu__check::before {
+  transition: transform 0.45s ease-in-out;
   transform: rotate(360deg);
 }
 

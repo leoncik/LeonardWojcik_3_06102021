@@ -39,7 +39,6 @@
     top: 30px;
     color: white;
     font-family: "FontAwesome";
-    transition: transform .4s ease-in-out;
 }
 
 /* Animation state */ 
@@ -49,5 +48,6 @@
 }
 
 .menu__item:hover .menu__check::before {
+    transition: transform .45s ease-in-out;
     transform: rotate(360deg);
 }
