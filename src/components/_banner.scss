@@ -1,6 +1,7 @@
+// Global style
+
 .banner {
     position: relative;
-    background-image: url("/public/images/restaurants/large/a-la-francaise.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,6 +18,24 @@
     width: 100%;
     background: $section-background-color-light;
     height: 20%;
+  }
+
+  // Specific styles
+
+  .banner-note-enchantee {
+    background-image: url("/public/images/restaurants/large/la-note-enchantee.jpg");
+  }
+
+  .banner-a-la-francaise {
+    background-image: url("/public/images/restaurants/large/a-la-francaise.jpg");
+  }
+
+  .banner-la-palette-du-gout {
+    background-image: url("/public/images/restaurants/large/palette-du-gout.jpg");
+  }
+
+  .banner-le-delice-des-sens {
+    background-image: url("/public/images/restaurants/large/le-delice-des-sens.jpg");
   }
 
   // TO DO : Set different size according to screen size.

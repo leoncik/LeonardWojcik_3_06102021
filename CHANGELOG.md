@@ -7,9 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
-## [0.2.5] - 2021-10-??
+## [0.3.0] - 2021-10-??
 ### Added
-- Animations on every menu mages.
+- Tablet and desktop versions.
+
+
+## [0.2.5] - 2021-10-14
+### Added
+- Specific image banner on menu pages.
+- Titles on menu pages.
+- Menu item hover animations on every menu mages.
+- Heart animation on every menu page.
+- Return link icon on menu pages.
 
 
 ## [0.2.4] - 2021-10-13

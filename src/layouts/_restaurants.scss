@@ -47,8 +47,16 @@
 
 /* Heart position */
 
-.heart {
+.restaurants__heart {
     position: absolute;
     right: 50px;
     bottom: 75px;
+}
+
+/* Button position */
+
+.menu__btn-validatation {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 50px 0;
 }
