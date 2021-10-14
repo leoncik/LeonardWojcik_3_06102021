@@ -10,6 +10,7 @@
         }
     }
 
+
 // Change la couleur du logo en fonction de la couleur de fond
 @mixin background-logo-color($background-color) {
     background-color: $background-color;
@@ -25,3 +26,21 @@
         }
     }
   }
+
+// Responsive mixins
+
+// Tablet version
+
+@mixin tablet-screens {
+    @media (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+// Desktop version
+
+@mixin computer-screens {
+    @media (min-width: map-get($breakpoints, computer)) {
+        @content;
+    }
+}

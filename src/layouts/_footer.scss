@@ -4,8 +4,20 @@ footer {
     @include background-text-color($section-background-color-dark);
     @include background-logo-color($section-background-color-dark);
     padding: 25px 0;
+    @include tablet-screens {
+        text-align: center;
+    }
+}
+
+footer a {
+    @include background-text-color($section-background-color-dark);
 }
 
 footer ul {
     margin-bottom: 0;
+    @include tablet-screens {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+    }
 }

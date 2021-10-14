@@ -30,3 +30,11 @@
     background-color: $primary-color;
     border-radius: 50%;
 }
+
+.fonctionnement__container {
+    @include tablet-screens {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

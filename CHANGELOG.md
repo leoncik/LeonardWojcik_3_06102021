@@ -7,9 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
-## [0.3.0] - 2021-10-??
+## [0.3.1] - 2021-10-??
 ### Added
-- Tablet and desktop versions.
+- Loading screen animation
+- Appearing menu item animation
+
+## [0.3.0] - 2021-10-15
+### Added
+- Tablet and desktop versions (work in progress).
+- Set footer elements as anchors.
+- Update readme.
 
 
 ## [0.2.5] - 2021-10-14

@@ -5,3 +5,10 @@ $tertiary-color: #99E2D0;
 
 $section-background-color-light: #f6f6f6;
 $section-background-color-dark: #353535;
+
+// Breakpoints maps
+
+$breakpoints: (
+  tablet: 800px,
+  computer: 900px,
+);

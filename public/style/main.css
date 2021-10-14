@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style: none;
 }
@@ -81,6 +85,14 @@ header {
   border-radius: 50%;
 }
 
+@media (min-width: 800px) {
+  .fonctionnement__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 /* Restaurants section */
 .restaurants {
   background-color: #f6f6f6;
@@ -92,6 +104,11 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 25px;
+}
+@media (min-width: 800px) {
+  .restaurants__list {
+    flex-direction: row;
+  }
 }
 
 .restaurants__item {
@@ -148,9 +165,26 @@ footer {
 footer .logo path {
   fill: white;
 }
+@media (min-width: 800px) {
+  footer {
+    text-align: center;
+  }
+}
+
+footer a {
+  background-color: #353535;
+  color: white;
+}
 
 footer ul {
   margin-bottom: 0;
+}
+@media (min-width: 800px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+  }
 }
 
 .btn {
