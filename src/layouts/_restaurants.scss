@@ -20,7 +20,12 @@
     position: relative;
     border-radius: 10px;
     background-color: white;
+    transition: 0.4s;
+    &:hover {
+        transform: scale(1.02);        
+    }
 }
+
 
 .restaurants__item figure {
     margin: 0;
@@ -54,6 +59,9 @@
     position: absolute;
     right: 50px;
     bottom: 75px;
+    @include tablet-screens {
+        bottom: 50px;
+    }
 }
 
 /* Button position */

@@ -5,7 +5,8 @@
 }
 
 .hero__location {
-    background-color: #eaeaea;
+    padding: 10px 0;
+    background: linear-gradient(#dadada, #e8e8e8 15%, #eaeaea 5%, #eaeaea 80%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,4 +18,8 @@
     margin-top: 0;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.cta__subtitle {
+    margin-bottom: 50px;
 }

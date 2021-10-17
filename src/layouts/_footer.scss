@@ -11,6 +11,9 @@ footer {
 
 footer a {
     @include background-text-color($section-background-color-dark);
+    &:hover {
+        border-bottom: 1px solid $tertiary-color;
+    }
 }
 
 footer ul {

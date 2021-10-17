@@ -6,10 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [0.3.3] - 2021-10-??
+## [0.3.4] - 2021-10-??
+### Fixed
+- Menu banner radius.
+- Restaurant selection cards (eneven card sizes).
+
+## [0.3.3] - 2021-10-17
+### Added
+- Smooth scroll.
+- Hover effect on restaurant selection.
+- Hover effect on footer link
+
 ### Fixed
 - Adjusting paddings.
 - Fixing heart overlapping.
+- Same footer on every page.
+
+### Changed
+- HTML of the buttons : from "button" to "anchor".
 
 
 ## [0.3.2] - 2021-10-17

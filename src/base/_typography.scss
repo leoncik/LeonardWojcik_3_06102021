@@ -1,3 +1,5 @@
+/* Global typography */
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -7,7 +9,15 @@ a {
     color: black;
 }
 
-// Menu pages typography
+/* index page typography */
+
+
+
+.cta__subtitle {
+    font-weight: lighter;
+}
+
+/* Menu pages typography */
 
 .menu h2::after {
     content: "";

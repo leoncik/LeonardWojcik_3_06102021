@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -11,6 +15,7 @@ li {
   list-style: none;
 }
 
+/* Global typography */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -20,6 +25,12 @@ a {
   color: black;
 }
 
+/* index page typography */
+.cta__subtitle {
+  font-weight: lighter;
+}
+
+/* Menu pages typography */
 .menu h2::after {
   content: "";
   display: block;
@@ -31,6 +42,7 @@ a {
 /* Header section */
 header {
   text-align: center;
+  padding: 25px 0;
 }
 
 /* Hero section */
@@ -39,7 +51,8 @@ header {
 }
 
 .hero__location {
-  background-color: #eaeaea;
+  padding: 10px 0;
+  background: linear-gradient(#dadada, #e8e8e8 15%, #eaeaea 5%, #eaeaea 80%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,6 +64,10 @@ header {
   margin-top: 0;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.cta__subtitle {
+  margin-bottom: 50px;
 }
 
 /* Fonctionnement section */
@@ -67,6 +84,7 @@ header {
   align-items: center;
   margin-top: 25px;
   padding-left: 15px;
+  padding-right: 15px;
   background-color: #f6f6f6;
   box-shadow: 3px 3px 5px #949494, -3px 3px 5px #949494;
   height: 45px;
@@ -116,6 +134,10 @@ header {
   position: relative;
   border-radius: 10px;
   background-color: white;
+  transition: 0.4s;
+}
+.restaurants__item:hover {
+  transform: scale(1.02);
 }
 
 .restaurants__item figure {
@@ -147,6 +169,11 @@ header {
   right: 50px;
   bottom: 75px;
 }
+@media (min-width: 800px) {
+  .restaurants__heart {
+    bottom: 50px;
+  }
+}
 
 /* Button position */
 .menu__btn-validatation {
@@ -175,6 +202,9 @@ footer a {
   background-color: #353535;
   color: white;
 }
+footer a:hover {
+  border-bottom: 1px solid #99E2D0;
+}
 
 footer ul {
   margin-bottom: 0;
@@ -188,9 +218,9 @@ footer ul {
 }
 
 .btn {
+  vertical-align: middle;
   border-radius: 25px;
-  height: 40px;
-  padding: 0 15px;
+  padding: 15px 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
 }
@@ -346,61 +376,65 @@ input:checked + .heart::before {
     transform: translate(0, 0);
   }
 }
+/*
+
 .loading-screen {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  animation: loading 1s forwards;
-  animation-delay: 3s;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation: loading 1s forwards;
+    animation-delay: 3s;
 }
 
 .loading-spinner {
-  position: fixed;
+    position: fixed;
 }
 
 .loading-spinner:after {
-  content: "";
-  display: block;
-  width: 225px;
-  height: 225px;
-  margin: 8px;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #9356DC transparent #FF79DA transparent;
-  animation: loading-spinner 1.2s linear infinite;
-}
+    content: "";
+    display: block;
+    width: 225px;
+    height: 225px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: $primary-color transparent $secondary-color transparent;
+    animation: loading-spinner 1.2s linear infinite;
+  }
 
-.loading-spinner:before {
-  content: "Ohmyfood!";
-  position: absolute;
-  font-size: 2rem;
-  left: 33px;
-  top: 45%;
-  font-family: "Shrikhand", cursive;
-}
-
+  .loading-spinner:before {
+    content: "Ohmyfood!";
+    position: absolute;
+    font-size: 2rem;
+    left: 33px;
+    top: 45%;
+    font-family: 'Shrikhand', cursive;
+  }
 @keyframes loading-spinner {
-  0% {
+0% {
     transform: rotate(0deg);
-  }
-  100% {
+}
+100% {
     transform: rotate(360deg);
-  }
 }
+}
+
 @keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
-  }
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
 }
+
+*/
 .menu-header {
   padding: 25px 0 15px 0;
 }
