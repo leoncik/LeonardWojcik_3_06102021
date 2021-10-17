@@ -31,6 +31,10 @@ a {
 }
 
 /* Menu pages typography */
+.menu h1 {
+  font-family: "Shrikhand", cursive;
+}
+
 .menu h2::after {
   content: "";
   display: block;
@@ -103,7 +107,7 @@ header {
   border-radius: 50%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 810px) {
   .fonctionnement__container {
     display: flex;
     flex-direction: row;
@@ -123,55 +127,15 @@ header {
   flex-direction: column;
   gap: 25px;
 }
-@media (min-width: 800px) {
+@media (min-width: 810px) {
   .restaurants__list {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
-
-.restaurants__item {
-  width: 100%;
-  position: relative;
-  border-radius: 10px;
-  background-color: white;
-  transition: 0.4s;
-}
-.restaurants__item:hover {
-  transform: scale(1.02);
-}
-
-.restaurants__item figure {
-  margin: 0;
-}
-
-.restaurant__img {
-  border-radius: 10px 10px 0 0;
-  object-fit: cover;
-  width: 100%;
-  height: 200px;
-}
-
-/* Nouveauté restaurant */
-.restaurants__item_new::before {
-  content: "Nouveau";
-  text-align: center;
-  height: 20px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  color: white;
-  background-color: green;
-}
-
-/* Heart position */
-.restaurants__heart {
-  position: absolute;
-  right: 50px;
-  bottom: 75px;
-}
-@media (min-width: 800px) {
-  .restaurants__heart {
-    bottom: 50px;
+@media (min-width: 950px) {
+  .restaurants__list {
+    flex-wrap: nowrap;
   }
 }
 
@@ -192,7 +156,7 @@ footer {
 footer .logo path {
   fill: white;
 }
-@media (min-width: 800px) {
+@media (min-width: 810px) {
   footer {
     text-align: center;
   }
@@ -209,11 +173,67 @@ footer a:hover {
 footer ul {
   margin-bottom: 0;
 }
-@media (min-width: 800px) {
+@media (min-width: 810px) {
   footer ul {
     display: flex;
     justify-content: space-around;
     padding-top: 40px;
+  }
+}
+
+.restaurants__item {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.4s;
+}
+.restaurants__item:hover {
+  transform: scale(1.02);
+}
+@media (min-width: 810px) {
+  .restaurants__item {
+    flex: 1 1 350px;
+  }
+}
+
+.restaurants__item figure {
+  margin: 0;
+}
+
+.restaurant__img {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.restaurants__label {
+  padding-left: 15px;
+  padding-bottom: 25px;
+}
+
+/* Nouveauté restaurant */
+.restaurants__item_new::before {
+  content: "Nouveau";
+  text-align: center;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+  background-color: green;
+}
+
+/* Heart position */
+.restaurants__heart {
+  position: absolute;
+  right: 50px;
+  bottom: 75px;
+}
+@media (min-width: 810px) {
+  .restaurants__heart {
+    bottom: 50px;
   }
 }
 
@@ -244,13 +264,13 @@ footer ul {
 
 .banner::after {
   content: "";
-  border-top-left-radius: 50% 100%;
-  border-top-right-radius: 50% 100%;
+  border-top-left-radius: 20% 100%;
+  border-top-right-radius: 20% 100%;
   position: absolute;
   bottom: 0;
   width: 100%;
   background: #f6f6f6;
-  height: 20%;
+  height: 10%;
 }
 
 .banner-note-enchantee {
@@ -364,6 +384,10 @@ input:checked + .heart::before {
 
 .menu__item:nth-of-type(3) {
   animation: fadeInUp 1s 1.3s forwards;
+}
+
+.menu__item:nth-of-type(4) {
+  animation: fadeInUp 1s 1.4s forwards;
 }
 
 @keyframes fadeInUp {

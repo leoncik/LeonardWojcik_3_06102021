@@ -6,16 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [0.3.4] - 2021-10-??
+## [0.3.5] - 2021-10-??
+### Changed
+- Various styling adjustments.
+
+
+## [0.3.4] - 2021-10-17
+### Added
+- Improved responsivity
+- Font style to menu titles.
+
+### Changed
+- Separation of the layout "restaurants" and component "restaurant-cards".
+
 ### Fixed
 - Menu banner radius.
-- Restaurant selection cards (eneven card sizes).
+- Missing appearing animation on 4th child (menu pages).
+- Adjust restaurant selection cards size.
 
 ## [0.3.3] - 2021-10-17
 ### Added
 - Smooth scroll.
 - Hover effect on restaurant selection.
-- Hover effect on footer link
+- Hover effect on footer links.
 
 ### Fixed
 - Adjusting paddings.

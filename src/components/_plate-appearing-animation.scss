@@ -22,6 +22,10 @@
     animation: fadeInUp 1s 1.3s forwards;
 }
 
+.menu__item:nth-of-type(4) {
+  animation: fadeInUp 1s 1.4s forwards;
+}
+
 @keyframes fadeInUp {
     0% {
       opacity: 0;
