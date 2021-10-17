@@ -320,6 +320,87 @@ input:checked + .heart::before {
   transform: rotate(360deg);
 }
 
+.menu__item {
+  opacity: 0;
+}
+
+.menu__item:first-of-type {
+  animation: fadeInUp 1s 1s forwards;
+}
+
+.menu__item:nth-of-type(2) {
+  animation: fadeInUp 1s 1.2s forwards;
+}
+
+.menu__item:nth-of-type(3) {
+  animation: fadeInUp 1s 1.3s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(0, 40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.loading-screen {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: loading 1s forwards;
+  animation-delay: 3s;
+}
+
+.loading-spinner {
+  position: fixed;
+}
+
+.loading-spinner:after {
+  content: "";
+  display: block;
+  width: 225px;
+  height: 225px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #9356DC transparent #FF79DA transparent;
+  animation: loading-spinner 1.2s linear infinite;
+}
+
+.loading-spinner:before {
+  content: "Ohmyfood!";
+  position: absolute;
+  font-size: 2rem;
+  left: 33px;
+  top: 45%;
+  font-family: "Shrikhand", cursive;
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
 .menu-header {
   padding: 25px 0 15px 0;
 }
