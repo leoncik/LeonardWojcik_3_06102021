@@ -13,6 +13,7 @@
 }
 
 .heart:hover::before {
+    cursor: pointer;
     color: $secondary-color;
 }
 
