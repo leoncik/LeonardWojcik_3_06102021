@@ -3,10 +3,16 @@
 footer {
     @include background-text-color($section-background-color-dark);
     @include background-logo-color($section-background-color-dark);
-    padding: 25px 0;
+    padding: 25px 20px;
     @include tablet-screens {
         text-align: center;
+        padding: 25px 0;;
     }
+}
+
+footer .logo {
+    width: 110px;
+    height: auto
 }
 
 footer a {
@@ -17,10 +23,12 @@ footer a {
 }
 
 footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     margin-bottom: 0;
-    @include tablet-screens {
-        display: flex;
+    @include computer-screens {
+        flex-direction: row;
         justify-content: space-around;
-        padding-top: 40px;
     }
 }

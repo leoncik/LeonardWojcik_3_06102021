@@ -33,6 +33,7 @@ a {
 /* Menu pages typography */
 .menu h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 1.7rem;
 }
 
 .menu h2::after {
@@ -184,7 +185,7 @@ footer {
   background-color: #353535;
   color: white;
   background-color: #353535;
-  padding: 25px 0;
+  padding: 25px 20px;
 }
 footer .logo path {
   fill: white;
@@ -192,7 +193,13 @@ footer .logo path {
 @media (min-width: 810px) {
   footer {
     text-align: center;
+    padding: 25px 0;
   }
+}
+
+footer .logo {
+  width: 110px;
+  height: auto;
 }
 
 footer a {
@@ -204,13 +211,15 @@ footer a:hover {
 }
 
 footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-bottom: 0;
 }
-@media (min-width: 810px) {
+@media (min-width: 950px) {
   footer ul {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    padding-top: 40px;
   }
 }
 
@@ -458,65 +467,61 @@ input:checked + .heart::before {
     transform: translate(0, 0);
   }
 }
-/*
-
 .loading-screen {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    animation: loading 1s forwards;
-    animation-delay: 3s;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: loading 1s forwards;
+  animation-delay: 3s;
 }
 
 .loading-spinner {
-    position: fixed;
+  position: fixed;
 }
 
 .loading-spinner:after {
-    content: "";
-    display: block;
-    width: 225px;
-    height: 225px;
-    margin: 8px;
-    border-radius: 50%;
-    border: 6px solid #fff;
-    border-color: $primary-color transparent $secondary-color transparent;
-    animation: loading-spinner 1.2s linear infinite;
-  }
+  content: "";
+  display: block;
+  width: 225px;
+  height: 225px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #9356DC transparent #FF79DA transparent;
+  animation: loading-spinner 1.2s linear infinite;
+}
 
-  .loading-spinner:before {
-    content: "Ohmyfood!";
-    position: absolute;
-    font-size: 2rem;
-    left: 33px;
-    top: 45%;
-    font-family: 'Shrikhand', cursive;
-  }
+.loading-spinner:before {
+  content: "Ohmyfood!";
+  position: absolute;
+  font-size: 2rem;
+  left: 33px;
+  top: 45%;
+  font-family: "Shrikhand", cursive;
+}
+
 @keyframes loading-spinner {
-0% {
+  0% {
     transform: rotate(0deg);
-}
-100% {
+  }
+  100% {
     transform: rotate(360deg);
+  }
 }
-}
-
 @keyframes loading {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        z-index: 0;
-    }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
-
-*/
 .menu-header {
   padding: 25px 0 15px 0;
 }
