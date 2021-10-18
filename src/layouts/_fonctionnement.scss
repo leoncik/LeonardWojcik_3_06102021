@@ -3,7 +3,7 @@
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
+    padding: 15px 15px 30px 15px;
 }
 
 .fonctionnement__item {
@@ -21,7 +21,7 @@
 }
 
 .fonctionnement__item::before {
-    content: "1";
+    content: "";
     text-align: center;
     width: 20px;
     height: 20px;
@@ -30,6 +30,18 @@
     color: white;
     background-color: $primary-color;
     border-radius: 50%;
+}
+
+.fonctionnement__item:first-of-type::before {
+    content: "1";
+}
+
+.fonctionnement__item:nth-of-type(2)::before {
+    content: "2";
+}
+
+.fonctionnement__item:nth-of-type(3)::before {
+    content: "3";
 }
 
 .fonctionnement__container {

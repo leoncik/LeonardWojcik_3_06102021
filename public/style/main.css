@@ -78,7 +78,7 @@ header {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
+  padding: 15px 15px 30px 15px;
 }
 
 .fonctionnement__item {
@@ -96,7 +96,7 @@ header {
 }
 
 .fonctionnement__item::before {
-  content: "1";
+  content: "";
   text-align: center;
   width: 20px;
   height: 20px;
@@ -105,6 +105,18 @@ header {
   color: white;
   background-color: #9356DC;
   border-radius: 50%;
+}
+
+.fonctionnement__item:first-of-type::before {
+  content: "1";
+}
+
+.fonctionnement__item:nth-of-type(2)::before {
+  content: "2";
+}
+
+.fonctionnement__item:nth-of-type(3)::before {
+  content: "3";
 }
 
 @media (min-width: 810px) {
@@ -332,7 +344,7 @@ input:checked + .heart::before {
   min-width: 0;
 }
 
-.menu__text h2, .menu__text p {
+.menu__text h3, .menu__text p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -490,6 +502,21 @@ input:checked + .heart::before {
 
 .menu__item {
   margin-top: 15px;
+}
+
+@media (min-width: 950px) {
+  .menus__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 950px) {
+  .entrees, .plats, .desserts {
+    flex: 1;
+    min-width: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

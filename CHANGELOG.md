@@ -6,9 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [0.3.5] - 2021-10-??
+## [0.3.6] - 2021-10-??
+### Added
+- box-shadow and hover effects on various elements (buttons, cards, items...)
+
+### Fixed
+- Adjusting font sizes.
+
+## [0.3.5] - 2021-10-18
+### Added
+- Desktop version for the menu pages.
+
 ### Changed
 - Various styling adjustments.
+
+### Fixed
+- "Fonctionnement" steps numbers.
+- Menu hover effect (overflow added to dishes title).
 
 
 ## [0.3.4] - 2021-10-17

@@ -19,6 +19,7 @@
     right: 50px;
 }
 
+// Menu section background color
 .menu {
     background-color: $section-background-color-light;
     padding: 0 15px;
@@ -30,4 +31,27 @@
 
 .menu__item {
     margin-top: 15px;
+}
+
+// Menu item display
+
+// Tablet only
+
+
+
+// Tablet and computer
+
+.menus__container {
+    @include computer-screens {
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
+    }
+}
+
+.entrees, .plats, .desserts {
+    @include computer-screens {
+        flex: 1;
+        min-width: 0;
+    }
 }
