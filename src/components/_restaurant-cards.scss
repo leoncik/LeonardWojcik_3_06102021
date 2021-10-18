@@ -3,6 +3,7 @@
     position: relative;
     border-radius: 10px;
     background-color: white;
+    @include shadow-border;
     transition: 0.4s;
     &:hover {
         transform: scale(1.02);        
@@ -36,12 +37,14 @@
 .restaurants__item_new::before {
     content: "Nouveau";
     text-align: center;
-    height: 20px;
+    height: 25px;
+    padding: 5px 10px 0 10px;
     position: absolute;
     top: 5px;
     right: 5px;
-    color: white;
-    background-color: green;
+    color: #008766;
+    font-weight: bold;
+    background-color: $tertiary-color;
 }
 
 /* Heart position */

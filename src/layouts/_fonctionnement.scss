@@ -14,10 +14,14 @@
     margin-top: 25px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: $section-background-color-light;
-    box-shadow: 3px 3px 5px rgb(148, 148, 148), -3px 3px 5px rgb(148, 148, 148);
     height: 45px;
     border-radius: 15px;
+    background-color: $section-background-color-light;
+    @include shadow-border;
+    transition: 0.4s;
+    &:hover {
+        transform: scale(1.02);        
+    }
 }
 
 .fonctionnement__item::before {
@@ -48,6 +52,24 @@
     @include tablet-screens {
         display: flex;
         flex-direction: row;
+        gap: 25px;
         justify-content: space-around;
     }
+}
+
+// Color of the icons on hover
+
+.fonctionnement__select:hover svg {
+    stroke: $primary-color;
+}
+
+.fonctionnement__compose:hover svg {
+    stroke: $primary-color;
+}
+
+.fa-store {
+    width: 24px;
+}
+.fonctionnement__eat:hover path {
+    fill: $primary-color;
 }

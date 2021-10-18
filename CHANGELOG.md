@@ -6,12 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [0.3.6] - 2021-10-??
+## [0.3.7] - 2021-10-18
+### Fixed
+- Adjusting footer on mobile and tablet versions.
+
+
+## [0.3.6] - 2021-10-18
 ### Added
 - box-shadow and hover effects on various elements (buttons, cards, items...)
+- Hover effect on "fonctionnement" items.
 
 ### Fixed
+- Adjusting prince position on menu item cards.
+- Adjusting "Nouveau" rectangle on restaurant selection.
 - Adjusting font sizes.
+
+### Changed
+- Using Font Awesome icons for "Fonctionnement" section.
 
 ## [0.3.5] - 2021-10-18
 ### Added

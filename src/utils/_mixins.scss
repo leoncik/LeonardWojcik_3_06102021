@@ -1,4 +1,17 @@
-// Change la couleur du texte en fonction de la couleur de fond
+////////////////////////
+// Box-shadow mixins //
+//////////////////////
+
+@mixin shadow-border {
+    box-shadow: 3px 3px 5px rgb(223, 223, 223), -3px 3px 5px rgb(228, 228, 228);
+}
+
+///////////////////
+// Color mixins // 
+/////////////////
+
+
+// Changes the color of the text according to the background color.
 @mixin background-text-color($background-color) {
     background-color: $background-color;
     @if (lightness($background-color) < 50%) {
@@ -11,7 +24,7 @@
     }
 
 
-// Change la couleur du logo en fonction de la couleur de fond
+// Changes the color of the logo according to the background color
 @mixin background-logo-color($background-color) {
     background-color: $background-color;
     @if (lightness($background-color) < 50%) {
@@ -27,7 +40,9 @@
     }
   }
 
-// Responsive mixins
+////////////////////////
+// Responsive mixins //
+//////////////////////
 
 // Tablet version
 

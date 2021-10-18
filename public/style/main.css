@@ -89,10 +89,14 @@ header {
   margin-top: 25px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #f6f6f6;
-  box-shadow: 3px 3px 5px #949494, -3px 3px 5px #949494;
   height: 45px;
   border-radius: 15px;
+  background-color: #f6f6f6;
+  box-shadow: 3px 3px 5px #dfdfdf, -3px 3px 5px #e4e4e4;
+  transition: 0.4s;
+}
+.fonctionnement__item:hover {
+  transform: scale(1.02);
 }
 
 .fonctionnement__item::before {
@@ -123,8 +127,25 @@ header {
   .fonctionnement__container {
     display: flex;
     flex-direction: row;
+    gap: 25px;
     justify-content: space-around;
   }
+}
+
+.fonctionnement__select:hover svg {
+  stroke: #9356DC;
+}
+
+.fonctionnement__compose:hover svg {
+  stroke: #9356DC;
+}
+
+.fa-store {
+  width: 24px;
+}
+
+.fonctionnement__eat:hover path {
+  fill: #9356DC;
 }
 
 /* Restaurants section */
@@ -198,6 +219,7 @@ footer ul {
   position: relative;
   border-radius: 10px;
   background-color: white;
+  box-shadow: 3px 3px 5px #dfdfdf, -3px 3px 5px #e4e4e4;
   transition: 0.4s;
 }
 .restaurants__item:hover {
@@ -229,12 +251,14 @@ footer ul {
 .restaurants__item_new::before {
   content: "Nouveau";
   text-align: center;
-  height: 20px;
+  height: 25px;
+  padding: 5px 10px 0 10px;
   position: absolute;
   top: 5px;
   right: 5px;
-  color: white;
-  background-color: green;
+  color: #008766;
+  font-weight: bold;
+  background-color: #99E2D0;
 }
 
 /* Heart position */
@@ -249,12 +273,24 @@ footer ul {
   }
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  width: 250px;
+  font-size: 1.2rem;
+}
+
 .btn {
   vertical-align: middle;
   border-radius: 25px;
   padding: 15px 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
+  box-shadow: 3px 3px 5px #dfdfdf, -3px 3px 5px #e4e4e4;
+}
+.btn:hover {
+  opacity: 0.85;
+  box-shadow: 3px 3px 5px #747474, -3px 3px 5px #747474;
 }
 
 .fonctionnement__item img {
@@ -304,6 +340,16 @@ footer ul {
 .entrees__item, .plats__item, .desserts__item {
   background-color: white;
   border-radius: 15px;
+  box-shadow: 3px 3px 5px #dfdfdf, -3px 3px 5px #e4e4e4;
+}
+
+.entrees__price,
+.plats__price,
+.desserts__price {
+  font-weight: bold;
+  position: relative;
+  top: 45px;
+  right: 15px;
 }
 
 .restaurants__favourite input,

@@ -1,4 +1,14 @@
 .entrees__item, .plats__item, .desserts__item {
     background-color: white;
     border-radius: 15px;
+    @include shadow-border;
+} 
+
+.entrees__price, 
+.plats__price,
+.desserts__price {
+    font-weight: bold;
+    position: relative;
+    top: 45px;
+    right: 15px;
 } 
