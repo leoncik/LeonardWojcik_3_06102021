@@ -1,7 +1,7 @@
 /* Global typography */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $body-font;
 }
 
 a {
@@ -11,17 +11,16 @@ a {
 
 /* index page typography */
 
-
-
 .cta__subtitle {
     font-weight: lighter;
+    font-size: 1rem;
 }
 
 /* Menu pages typography */
 
 .menu h1 {
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.7rem;
+    font-family: $logo-title;
+    font-size: $menu-title;
 }
 
 .menu h2::after {

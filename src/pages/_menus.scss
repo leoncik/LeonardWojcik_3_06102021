@@ -1,4 +1,4 @@
-// Header
+// Menu header
 .menu-header {
     padding: 25px 0 15px 0;
 }
@@ -25,21 +25,30 @@
     padding: 0 15px;
 }
 
-.menu h1 {
+// Menu items style
+
+.menu__text {
+    padding-left: 15px;
+}
+
+.menu h1,
+.entrees h2 {
     margin-top: 0;
+}
+
+.plats h2,
+.desserts h2 {
+    margin-top: 50px;
+    @include computer-screens {
+        margin-top: initial;
+    }
 }
 
 .menu__item {
     margin-top: 15px;
 }
 
-// Menu item display
-
-// Tablet only
-
-
-
-// Tablet and computer
+// Tablet and computer versions
 
 .menus__container {
     @include computer-screens {

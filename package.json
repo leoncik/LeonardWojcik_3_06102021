@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/main.scss:public/style/main.css"
+    "sass": "sass --watch src/main.scss:public/style/main.css -w --style compressed",
+    "prefix": "postcss public/style/main.css --use=autoprefixer --output=public/style/prefixed/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": "last 2 versions",
   "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
     "sass": "^1.42.1"
   }
 }
