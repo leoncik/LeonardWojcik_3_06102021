@@ -22,7 +22,7 @@
 input:checked + .heart::before
 {
     content: "\f004";
-    background: linear-gradient(red, blue);
+    background: linear-gradient(variables.$primary-color, variables.$secondary-color);
     background-clip: text;
 	color: transparent;
     font-family: "FontAwesome";
