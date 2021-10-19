@@ -1,3 +1,5 @@
+@use "../utils/variables";
+
 // Cache la checkbox d'origine
 .restaurants__favourite input,
 .menu__favourite input {
@@ -14,7 +16,7 @@
 
 .heart:hover::before {
     cursor: pointer;
-    color: $secondary-color;
+    color: variables.$secondary-color;
 }
 
 input:checked + .heart::before

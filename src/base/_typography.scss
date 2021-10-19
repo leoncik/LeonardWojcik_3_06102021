@@ -1,7 +1,9 @@
+@use "../utils/variables";
+
 /* Global typography */
 
 body {
-    font-family: $body-font;
+    font-family: variables.$body-font;
 }
 
 a {
@@ -19,8 +21,8 @@ a {
 /* Menu pages typography */
 
 .menu h1 {
-    font-family: $logo-title;
-    font-size: $menu-title;
+    font-family: variables.$logo-title;
+    font-size: variables.$menu-title;
 }
 
 .menu h2::after {
@@ -28,5 +30,5 @@ a {
     display: block;
     width: 70px;
     height: 5px;
-    background: $tertiary-color;
+    background: variables.$tertiary-color;
 }

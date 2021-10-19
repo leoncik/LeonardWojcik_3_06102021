@@ -1,28 +1,17 @@
-// Menu header
-.menu-header {
-    padding: 25px 0 15px 0;
+@use "../utils/variables";
+@use "../utils/mixins";
+
+// Menu section background color
+.menu {
+    background-color: variables.$section-background-color-light;
+    padding: 0 15px;
 }
 
-.return-index {
-    position: absolute;
-    left: 15px;
-    font-size: 25px;
-}
-
-.menu__head {
-    display: flex;
-    justify-content: space-between;
-}
+// Menu heart position
 
 .menu__heart {
     position: relative;
     right: 50px;
-}
-
-// Menu section background color
-.menu {
-    background-color: $section-background-color-light;
-    padding: 0 15px;
 }
 
 // Menu items style
@@ -39,7 +28,7 @@
 .plats h2,
 .desserts h2 {
     margin-top: 50px;
-    @include computer-screens {
+    @include mixins.computer-screens {
         margin-top: initial;
     }
 }
@@ -51,7 +40,7 @@
 // Tablet and computer versions
 
 .menus__container {
-    @include computer-screens {
+    @include mixins.computer-screens {
         display: flex;
         justify-content: space-around;
         gap: 25px;
@@ -59,7 +48,7 @@
 }
 
 .entrees, .plats, .desserts {
-    @include computer-screens {
+    @include mixins.computer-screens {
         flex: 1;
         min-width: 0;
     }

@@ -1,14 +1,17 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
 .restaurants__item {
     width: 100%;
     position: relative;
     border-radius: 10px;
     background-color: white;
-    @include shadow-border;
+    @include mixins.shadow-border;
     transition: 0.4s;
     &:hover {
         transform: scale(1.02);        
     }
-    @include tablet-screens {
+    @include mixins.tablet-screens {
         flex: 1 1 350px;
     }
 }
@@ -44,7 +47,7 @@
     right: 5px;
     color: #008766;
     font-weight: bold;
-    background-color: $tertiary-color;
+    background-color: variables.$tertiary-color;
 }
 
 /* Heart position */
@@ -53,7 +56,7 @@
     position: absolute;
     right: 50px;
     bottom: 75px;
-    @include tablet-screens {
+    @include mixins.tablet-screens {
         bottom: 50px;
     }
 }

@@ -1,3 +1,6 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
 button {
     cursor: pointer;
     border: none;
@@ -9,9 +12,9 @@ button {
     vertical-align: middle;
     border-radius: 25px;
     padding: 15px 15px;
-    background: linear-gradient($secondary-color, $primary-color);
+    background: linear-gradient(variables.$secondary-color, variables.$primary-color);
     color: white;
-    @include shadow-border;
+    @include mixins.shadow-border;
     &:hover {
         opacity: 0.85;
         box-shadow: 3px 3px 5px rgb(116, 116, 116), -3px 3px 5px rgb(116, 116, 116);

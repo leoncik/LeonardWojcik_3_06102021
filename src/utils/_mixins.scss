@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "sass:map";
+@use "variables";
+
 ////////////////////////
 // Box-shadow mixins //
 //////////////////////
@@ -14,7 +18,7 @@
 // Changes the color of the text according to the background color.
 @mixin background-text-color($background-color) {
     background-color: $background-color;
-    @if (lightness($background-color) < 50%) {
+    @if (color.lightness($background-color) < 50%) {
         color: white;
     }
     
@@ -27,7 +31,7 @@
 // Changes the color of the logo according to the background color
 @mixin background-logo-color($background-color) {
     background-color: $background-color;
-    @if (lightness($background-color) < 50%) {
+    @if (color.lightness($background-color) < 50%) {
         .logo path {
             fill: white;
         }
@@ -47,7 +51,7 @@
 // Tablet version
 
 @mixin tablet-screens {
-    @media (min-width: map-get($breakpoints, tablet)) {
+    @media (min-width: map.get(variables.$breakpoints, tablet)) {
         @content;
     }
 }
@@ -55,7 +59,7 @@
 // Desktop version
 
 @mixin computer-screens {
-    @media (min-width: map-get($breakpoints, computer)) {
+    @media (min-width: map.get(variables.$breakpoints, computer)) {
         @content;
     }
 }

@@ -1,0 +1,141 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+/* Header section */
+
+header
+{
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Hero section */
+
+.hero {
+    text-align: center;
+}
+
+.hero__location {
+    padding: 10px 0;
+    background: linear-gradient(#dadada, #e8e8e8 15%, #eaeaea 5%, #eaeaea 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.cta {
+    background-color: variables.$section-background-color-light;
+    margin-top: 0;
+    padding: 50px 20px;
+}
+
+.cta__subtitle {
+    margin-bottom: 50px;
+}
+
+/* Fonctionnement section */
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 30px 15px;
+}
+
+.fonctionnement__item {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: variables.$section-background-color-light;
+    @include mixins.shadow-border;
+    transition: 0.4s;
+    &:hover {
+        transform: scale(1.02);        
+    }
+}
+
+.fonctionnement__item::before {
+    content: "";
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -15px;
+    color: white;
+    background-color: variables.$primary-color;
+    border-radius: 50%;
+}
+
+.fonctionnement__item:first-of-type::before {
+    content: "1";
+}
+
+.fonctionnement__item:nth-of-type(2)::before {
+    content: "2";
+}
+
+.fonctionnement__item:nth-of-type(3)::before {
+    content: "3";
+}
+
+.fonctionnement__container {
+    @include mixins.tablet-screens {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        justify-content: space-around;
+    }
+}
+
+// Color of the icons on hover
+
+.fonctionnement__select:hover svg {
+    stroke: variables.$primary-color;
+}
+
+.fonctionnement__compose:hover svg {
+    stroke: variables.$primary-color;
+}
+
+.fa-store {
+    width: 24px;
+}
+.fonctionnement__eat:hover path {
+    fill: variables.$primary-color;
+}
+
+/* Restaurants section */
+
+.restaurants {
+    background-color: variables.$section-background-color-light;
+    padding: 50px 15px;
+}
+
+.restaurants__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    @include mixins.tablet-screens {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @include mixins.computer-screens {
+        flex-wrap: nowrap;
+    }
+}
+
+
+/* Button position */
+
+.menu__btn-validatation {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 50px 0;
+}

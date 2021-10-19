@@ -1,28 +1,26 @@
 // utils
-@import "./utils/variables.scss";
-@import "./utils/mixins.scss";
+@use "utils/variables.scss";
+@use "utils/mixins.scss";
 
 // base
-@import "./base/base.scss";
-@import "./base/typography.scss";
+@use "base/base.scss";
+@use "base/typography.scss";
 
 // layouts
-@import "./layouts/header.scss";
-@import "./layouts/hero.scss";
-@import "./layouts/fonctionnement.scss";
-@import "./layouts/restaurants.scss";
-@import "./layouts/footer.scss";
+@use "layouts/footer.scss";
+@use "layouts/menu-header";
 
 // components
-@import "./components/restaurant-cards";
-@import "./components/buttons.scss";
-@import "./components/icons.scss";
-@import "./components/banner.scss";
-@import "./components/menu-item";
-@import "./components/heart";
-@import "./components/plate-selection-animation";
-@import "./components/plate-appearing-animation";
-@import "./components/loading-spinner";
+@use "components/restaurant-cards";
+@use "components/buttons.scss";
+@use "components/icons.scss";
+@use "components/banner.scss";
+@use "components/menu-item";
+@use "components/heart";
+@use "components/plate-selection-animation";
+@use "components/plate-appearing-animation";
+@use "components/loading-spinner";
 
 // pages
-@import "./pages/menus";
+@use "pages/home";
+@use "pages/menus";

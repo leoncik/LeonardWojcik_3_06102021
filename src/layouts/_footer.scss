@@ -1,10 +1,13 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
 /* Footer section */
 
 footer {
-    @include background-text-color($section-background-color-dark);
-    @include background-logo-color($section-background-color-dark);
+    @include mixins.background-text-color(variables.$section-background-color-dark);
+    @include mixins.background-logo-color(variables.$section-background-color-dark);
     padding: 25px 20px;
-    @include tablet-screens {
+    @include mixins.tablet-screens {
         text-align: center;
         padding: 25px 0;;
     }
@@ -16,9 +19,9 @@ footer .logo {
 }
 
 footer a {
-    @include background-text-color($section-background-color-dark);
+    @include mixins.background-text-color(variables.$section-background-color-dark);
     &:hover {
-        border-bottom: 1px solid $tertiary-color;
+        border-bottom: 1px solid variables.$tertiary-color;
     }
 }
 
@@ -27,7 +30,7 @@ footer ul {
     flex-direction: column;
     gap: 8px;
     margin-bottom: 0;
-    @include computer-screens {
+    @include mixins.computer-screens {
         flex-direction: row;
         justify-content: space-around;
     }

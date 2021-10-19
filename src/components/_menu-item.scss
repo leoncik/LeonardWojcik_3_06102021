@@ -1,7 +1,9 @@
+@use "../utils/mixins";
+
 .entrees__item, .plats__item, .desserts__item {
     background-color: white;
     border-radius: 15px;
-    @include shadow-border;
+    @include mixins.shadow-border;
 } 
 
 .entrees__price, 
