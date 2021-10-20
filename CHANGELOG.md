@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2021-10-20
+### Fixed
+- W3C error in index file (The element label must not appear as a descendant of the a element).
+
 ## [1.0.1] - 2021-10-19
 ### Fixed
 - Hearts color.
