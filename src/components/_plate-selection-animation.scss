@@ -1,11 +1,11 @@
 @use "../utils/variables";
 
-// TO DO : Improve effect in reverse motion.
+// Hover effect animation of the menu items
 
-/* Initial state */
+// Initial state
 
 .menu__item {
-    overflow: hidden; // Permet à l'élément "check" de prendre la forme arrondie automatiquement
+    overflow: hidden; // Allows to the "check" element to take the border shape automatically.
     display: flex;
     justify-content: space-between;
 }
@@ -43,7 +43,7 @@
     font-family: "FontAwesome";
 }
 
-/* Animation state */ 
+// Animation state
 
 .menu__item:hover .menu__check {
     width: 100px;

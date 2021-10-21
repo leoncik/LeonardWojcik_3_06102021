@@ -8,8 +8,9 @@
     background-color: white;
     @include mixins.shadow-border;
     transition: 0.4s;
+    backface-visibility: hidden;
     &:hover {
-        transform: scale(1.02);        
+        transform: scale(1.06) translate3d(0,0,0);        
     }
     @include mixins.tablet-screens {
         flex: 1 1 350px;

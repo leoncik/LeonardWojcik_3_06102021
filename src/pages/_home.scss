@@ -55,8 +55,9 @@ header
     background-color: variables.$section-background-color-light;
     @include mixins.shadow-border;
     transition: 0.4s;
-    &:hover {
-        transform: scale(1.02);        
+    backface-visibility: hidden;
+    &:hover {      
+        transform: scale(1.1) translate3d(0,0,0);   
     }
 }
 
@@ -129,13 +130,4 @@ header
     @include mixins.computer-screens {
         flex-wrap: nowrap;
     }
-}
-
-
-/* Button position */
-
-.menu__btn-validatation {
-    display: flex;
-    justify-content: center;
-    padding: 25px 0 50px 0;
 }

@@ -1,5 +1,6 @@
 @use "../utils/mixins";
 
+// Stlye of the menu items
 .entrees__item, .plats__item, .desserts__item {
     background-color: white;
     border-radius: 15px;
@@ -9,6 +10,7 @@
 .entrees__price, 
 .plats__price,
 .desserts__price {
+    margin-left: 15px;
     font-weight: bold;
     position: relative;
     top: 45px;
