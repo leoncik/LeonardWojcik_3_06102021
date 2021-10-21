@@ -7,7 +7,7 @@
 
 Projet n°3 réalisé dans le cadre de la formation Développeur Front-End d'Openclassrooms.
 
-L'application réalisée (pour une entreprise fictive nommée "Ohmyfood!") doit permettre à l'utilisateur de composer son propre menu depuis l'interface et ainsi réduire leur temps d'attente au restaurant. 
+L'application réalisée (pour une entreprise fictive nommée "Ohmyfood!") doit permettre à l'utilisateur de composer son propre menu depuis l'interface et ainsi réduire le temps d'attente au restaurant. 
 
 ### Contraintes techniques et fonctionnalités
 
@@ -34,3 +34,8 @@ Nom du dossier    | Fonction
 `layouts`         | Sections de page
 `utils`           | Variables, mixins, fonctions.
 `page`            | Styles exclusifs à une seule page
+
+## Compilation et utilisation du code CSS
+
+Le code compilé par SASS se trouve dans le dossier public/style/main.css en mode minifié.
+Une fois celui-ci compilé, lancez la commande <code>npm run prefix</code> pour autopréfixer le css. Le code sera généré dans le dossier public/style/prefixed/style.css et est lié par défaut à toutes les pages HTML.
