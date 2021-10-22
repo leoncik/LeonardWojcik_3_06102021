@@ -8,9 +8,9 @@
     background-color: white;
     @include mixins.shadow-border;
     transition: 0.4s;
-    backface-visibility: hidden;
+    backface-visibility: hidden; // For rendering improvements
     &:hover {
-        transform: scale(1.06) translate3d(0,0,0);        
+        transform: scale(1.06) translate3d(0,0,0); // transform: translateZ(0); for rendering improvements (add hardware acceleration to the animation) 
     }
     @include mixins.tablet-screens {
         flex: 1 1 350px;

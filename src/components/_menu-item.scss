@@ -2,6 +2,7 @@
 
 // Stlye of the menu items
 .entrees__item, .plats__item, .desserts__item {
+    cursor: pointer;
     background-color: white;
     border-radius: 15px;
     @include mixins.shadow-border;
