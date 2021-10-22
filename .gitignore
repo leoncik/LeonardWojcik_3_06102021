@@ -11,3 +11,6 @@ node_modules/
 # HTML menu template
 menu-template.html
 src/html/menu-template.html
+
+# Personal files
+*.pdf
