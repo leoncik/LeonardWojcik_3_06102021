@@ -21,6 +21,7 @@ header
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     height: 50px;
 }
 
@@ -93,23 +94,6 @@ header
         gap: 25px;
         justify-content: space-around;
     }
-}
-
-// Color of the icons on hover
-
-.fonctionnement__select:hover svg {
-    stroke: variables.$primary-color;
-}
-
-.fonctionnement__compose:hover svg {
-    stroke: variables.$primary-color;
-}
-
-.fa-store {
-    width: 24px;
-}
-.fonctionnement__eat:hover path {
-    fill: variables.$primary-color;
 }
 
 /* Restaurants section */

@@ -5,7 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.4] - 2021-10-21
+## [1.0.6] - 2021-10-25
+### Changed
+- Color of the fonctionnement icons.
+- Mobile icon (fonctionnement section). From feathericons to Font Awesome.
+- List icon (fonctionnement section). From feathericons to Font Awesome.
+- Location icon (hero section). From feathericons to Font Awesome.
+- Added space between icon location and text location.
+- Heart animation (turned click animation into a hover animation).
+- Moved icon style rules from _home partial to _icons partial.
+
+## [1.0.5] - 2021-10-21
 ### Added
 - Cursor pointer on "fonctionnement" and "menu items".
 - Aditionals comments.

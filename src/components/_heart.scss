@@ -17,6 +17,19 @@
 
 .heart:hover::before {
     cursor: pointer;
+    content: "\f004";
+    background: linear-gradient(variables.$primary-color, variables.$secondary-color);
+    background-clip: text;
+	color: transparent;
+    font-family: "FontAwesome";
+    transform: scale(1.3);
+}
+
+/**
+* Heart animation on click version, width different hover effect.
+
+.heart:hover::before {
+    cursor: pointer;
     color: variables.$secondary-color;
 }
 
@@ -28,4 +41,4 @@ input:checked + .heart::before
 	color: transparent;
     font-family: "FontAwesome";
     transform: scale(1.3);
-}
+} */

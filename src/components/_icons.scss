@@ -1,8 +1,39 @@
-// Icons style
-.fonctionnement__item img {
-    width: 15px;
+@use "../utils/variables";
+
+// Icons style (hero section)
+
+.fa-map-marker-alt {
+    color: #353535;
+    width: variables.$icon-width;
 }
 
-.handshake {
-    width: 15px;
+// Icons style (fonctionnement section)
+
+.fonctionnement__item img,
+.handshake,
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+    width: variables.$icon-width;
+    height: variables.$icon-height;
+}
+
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+    color: #7e7e7e;
+}
+
+// Color of the icons on hover
+
+.fonctionnement__select:hover path {
+    fill: variables.$primary-color;
+}
+
+.fonctionnement__compose:hover path {
+    fill: variables.$primary-color;
+}
+
+.fonctionnement__eat:hover path {
+    fill: variables.$primary-color;
 }
