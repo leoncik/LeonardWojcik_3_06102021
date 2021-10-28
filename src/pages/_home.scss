@@ -59,7 +59,8 @@ header
     transition: 0.4s;
     backface-visibility: hidden; // For rendering improvements
     &:hover {      
-        transform: scale(1.1) translate3d(0,0,0); // transform: translateZ(0); for rendering improvements (add hardware acceleration to the animation)  
+        transform: scale(1.1) translate3d(0,0,0); // transform: translateZ(0); for rendering improvements (add hardware acceleration to the animation)
+        background-color: #f5edff;
     }
 }
 
